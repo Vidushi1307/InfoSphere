@@ -29,7 +29,7 @@ const generateUI=(articles)=>{
 };
 const getNews=async()=>{
     container.innerHTML="";
-    let response = await fetch(requestURL);
+    let response = fetch(requestURL);
     if(!response.ok)
     {
         alert("Facing issue at the moment. Plase try again later");
